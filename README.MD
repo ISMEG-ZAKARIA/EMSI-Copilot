@@ -92,11 +92,18 @@ npm run dev
 
 ## 📸 System Screenshots
 
-### Professor Dashboard
-![Professor Dashboard Placeholder](/frontend/public/PRF-PIC/Prof.png) <!-- Update later -->
+### 🔐 Authentication
+![Login Page](Platform-Pictures/LogIn.png)
 
-### Student Interface
-![Student Chat Interface Placeholder](/frontend/public/PRF-PIC/Student.webp) <!-- Update later -->
+### 🧑‍🎓 Student Interface
+![Student Chat](Platform-Pictures/Student_Chat.png)
+![Student Library](Platform-Pictures/Student_Biblio.png)
+
+### 👨‍🏫 Professor Dashboard
+![Professor Dashboard](Platform-Pictures/Prof.png)
+
+### 👑 Administrator Panel
+![Admin Dashboard](Platform-Pictures/Admin.png)
 
 ---
 
