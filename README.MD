@@ -1,7 +1,7 @@
 # 🎓 EMSI Copilot
 ## Institutional AI Academic Assistant for EMSI Engineering Students
 
-![Hero Banner](/frontend/public/LOGO/logo.png) <!-- Placeholder -->
+![Hero Banner](/frontend/public/LOGO/image.png)
 
 EMSI Copilot is a secure, role-based AI academic assistant engineered exclusively for EMSI engineering students and professors. It fundamentally solves the issue of AI hallucination in academia by employing a strict **Retrieval-Augmented Generation (RAG)** architecture. The system ensures that all AI responses are generated **only from official course materials uploaded by professors**.
 
@@ -110,6 +110,3 @@ npm run dev
 ## 🏆 Project Status
 **Current Version:** Demo (RAG-based secure academic assistant)  
 **Future Scale:** Institutional Deployment Across EMSI Campuses.
-
-### Development Team
-**ISMEG ZAKARIA** / EMSI Engineering Architecture Project
