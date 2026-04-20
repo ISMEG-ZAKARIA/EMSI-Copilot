@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: NewStrongPassword123!
+      MYSQL_DATABASE: emsi_copilot
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_PORT=3306
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=NewStrongPassword123!
+      - MYSQL_DB=emsi_copilot
+      - SECRET_KEY=your-super-secret-key-change-this-in-production
+      - OPENAI_API_KEY=your-openai-api-key-if-using
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - ./backend/vector_store:/app/vector_store
+
+volumes:
+  mysql_data:
